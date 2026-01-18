@@ -1,0 +1,26 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Heading from "../components/Heading.astro";
+import MainHeading from "../components/MainHeading.astro";
+
+const { title } = Astro.props;
+---
+
+<BaseLayout>
+    <Heading />
+    <MainHeading>
+        {title}
+    </MainHeading>
+    <div class="text-content">
+        <slot />
+    </div>
+</BaseLayout>
+
+<style>
+    p {
+        font-family: var(--font-display);
+        color: var(--color-muted);
+        margin: 0;
+        font-weight: 300;
+    }
+</style>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Heading from "../components/Heading.astro";
+import MainHeading from "../components/MainHeading.astro";
+---
+
+<BaseLayout>
+    <Heading />
+    <main class="main-content">
+        <MainHeading>Mazen Khaled</MainHeading>
+        <p class="text-content">
+            I am a <strong>Computer and Systems Engineer</strong> focused on building
+            performant software and exploring the internals of modern computing. Currently,
+            I'm documenting my journey through hands-on projects in low-level programming
+            and system design and web development.
+        </p>
+        <p class="text-content">
+            Explore my <a href="/blog">technical writing</a>, learn more
+            <a href="/about">about my background</a>, or connect with me below:
+        </p>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/mazen-khaled-7b5130253/">
+                    LinkedIn</a
+                >
+            </li>
+            <li><a href="https://github.com/Mabona3">GitHub</a></li>
+            <li><a href="https://x.com/Mabona3S">Twitter/X</a></li>
+            <li><a href="mailto:mazenkhaled2003@gmail.com">Email</a></li>
+        </ul>
+    </main>
+</BaseLayout>

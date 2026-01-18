@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MainHeading from "../components/MainHeading.astro";
+import Heading from "../components/Heading.astro";
+---
+
+<BaseLayout>
+    <Heading/>
+    <main>
+        <MainHeading>Page Not Found</MainHeading>
+            <p><a href="/">Home</a></p>
+            <p><a href="/blog">Blog</a></p>
+            <p><a href="/about">About</a></p>
+    </main>
+</BaseLayout>

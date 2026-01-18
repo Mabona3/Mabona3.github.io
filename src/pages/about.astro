@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Heading from "../components/Heading.astro";
+import MainHeading from "../components/MainHeading.astro";
+---
+
+<BaseLayout title="About - Mabona3">
+    <Heading />
+    <main>
+        <MainHeading>About Me</MainHeading>
+        <section>
+            <p class="text-content">
+                Passionate about technology, reading, and sharing knowledge.
+                Detail-oriented computer science engineer with strong
+                problem-solving skills and a love for clean, efficient code.
+                This website is made for the purpose of documenting my
+                engineering journey and share about my projects, thoughts and
+                achievements.
+            </p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul class="text-content">
+                <li>C/C++ (systems programming, memory management)</li>
+                <li>Go (backend services, tooling, concurrency)</li>
+                <li>JS/TS (Web developement)</li>
+                <li>Systems and low-level programming</li>
+                <li>Embedded and IoT systems</li>
+            </ul>
+        </section>
+    </main>
+</BaseLayout>

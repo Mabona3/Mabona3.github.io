@@ -4,7 +4,16 @@
     --color-accent: #c34043;
     --color-muted: #6b6b6b;
     --font-display: 'Cormorant Garamond', serif;
-    --font-mono: 'IBM Plex Mono','Courier New', monospace;
+    --font-mono: IBMPlexMono;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: IBMPlexMono;
+    src: url("/fonts/IBMPlexMono-Regular.ttf");
 }
 
 h1,

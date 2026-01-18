@@ -25,21 +25,23 @@ import "../styles/global.css";
     }
 
     .ascii-art {
-        font-family: var(--font-mono) !important;
+        font-family: var(--font-mono);
+        color: var(--color-accent);
         font-size: 0.65rem;
         line-height: 1.2;
         margin: 0;
         letter-spacing: -0.05em;
         word-spacing: 0;
-        color: var(--color-accent);
         opacity: 0.9;
         white-space: pre;
     }
+
     @media (max-width: 768px) {
         .ascii-art {
             font-size: 0.5rem;
         }
     }
+
     @media (max-width: 480px) {
         .ascii-art {
             font-size: 0.4rem;

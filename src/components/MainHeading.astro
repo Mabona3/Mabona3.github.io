@@ -1,6 +1,36 @@
 ---
-
+const { pubDate } = Astro.props;
 ---
 
 <h1 class="main_heading"><slot /></h1>
+{
+    pubDate && (
+        <div class="publish-date">
+            Published: {new Intl.DateTimeFormat("en-CA").format(pubDate)}{" "}
+        </div>
+    )
+}
 <div class="line-accent"></div>
+
+<style>
+    .publish-date {
+        font-family: var(--font-mono);
+        color: var(--color-muted);
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .line-accent {
+        width: 200px;
+        height: 1px;
+        background: linear-gradient(
+            90deg,
+            var(--color-accent) 0%,
+            transparent 100%
+        );
+        margin: 1rem 0 2rem;
+    }
+</style>

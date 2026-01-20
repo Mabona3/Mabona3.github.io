@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    scrollbar-width: none;
 }
 
 @font-face {
@@ -16,50 +17,11 @@
     src: url("/fonts/IBMPlexMono-Regular.ttf");
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .main_heading {
     font-family: var(--font-display);
     font-weight: 600;
     color: var(--color-accent);
     font-style: italic;
-}
-
-.line-accent {
-    width: 200px;
-    height: 2px;
-    background: linear-gradient(90deg,
-            var(--color-accent) 0%,
-            transparent 100%);
-    margin: 1rem 0 2rem
-}
-
-h1 {
-    font-size: 2.5rem
-}
-
-h2 {
-    font-size: 2.25rem
-}
-
-h3 {
-    font-size: 2rem
-}
-
-h4 {
-    font-size: 1.75rem
-}
-
-h5 {
-    font-size: 1.5rem
-}
-
-h6 {
-    font-size: 1.25rem
 }
 
 .text-content {
